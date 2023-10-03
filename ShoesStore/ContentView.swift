@@ -73,7 +73,6 @@ struct ContentView: View {
                     width: UIScreen.main.bounds.width ,
                     height: UIScreen.main.bounds.height
                 )
-                //                .ignoresSafeArea(.all)
             }
         }
         
@@ -118,8 +117,6 @@ struct ContentView: View {
             
         }
 #endif
-        
-        
     }
 }
 
@@ -138,12 +135,9 @@ struct Shoes: Identifiable {
 
 
 struct ShoesView: View {
-    
-    
     var body: some View {
         // Your code for displaying a list of shoes here
 #if !os(macOS)
-        
         if UIDevice.current.userInterfaceIdiom == .pad {
             VStack {
                 ScrollView(.vertical, showsIndicators: false) {
@@ -347,7 +341,6 @@ struct WishListView: View {
 
 struct AccountView: View {
     var body: some View {
-        // Your code for the notes view here
 #if !os(macOS)
         
         if UIDevice.current.userInterfaceIdiom == .pad {
@@ -380,17 +373,16 @@ struct CouponsView: View {
             HStack{
                 Text("Special Coupons For you")
                     .font(.custom("SF Pro", size: 26, relativeTo: .headline))
-                    .padding(.leading, 18)
                 Spacer()
             }
+                    
             Image("ses")
                 .resizable()
                 .frame(maxHeight: 144)
                 .scaledToFill()
                 .background(.cyan)
                 .cornerRadius(8)
-                .padding()
-        }.padding(.bottom, 18)
+        }.padding()
     }
 }
 
@@ -411,42 +403,44 @@ struct SaleView: View {
                 Text("See All")
                     .font(.custom("SF Pro", size: 15, relativeTo: .headline))
                     .padding(.trailing, 18)
-            }.padding(.bottom, 8)
+            }
             
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 15) {
+                HStack(spacing: 15){
                     ForEach(shoeses, id: \.id){ shoes in
-                        NavigationLink {
-                            ShoesDetailView(shoes: shoes)
-                        } label: {
-                            VStack(alignment: .leading, spacing: 4) {
-                                Image(shoes.image)
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(width: 149)
-                                    .background(.yellow)
-                                    .cornerRadius(8)
-                                
-                                VStack(alignment: .leading, spacing: 4) {
-                                    Text(shoes.series)
-                                        .font(.headline)
-                                    HStack{
-                                        Image(systemName: "tag")
-                                            .foregroundColor(.red)
-                                        Text("$\(String(format: "%.2f", shoes.price))")
-                                            .font(.subheadline)
-                                            .foregroundColor(.red)
+                        VStack(alignment: .leading) {
+                            NavigationLink(
+                                destination : ShoesDetailView(shoes: shoes),
+                                label: {
+                                    VStack(alignment: .leading) {
+                                        Image(shoes.image)
+                                            .resizable()
+                                            .scaledToFill()
+                                            .background(.yellow)
+                                            .frame(width: 149, height: 192)
+                                            .cornerRadius(8)
                                         
+                                        VStack {
+                                            Text(shoes.series)
+                                                .font(.headline)
+                                            HStack{
+                                                Image(systemName: "tag")
+                                                    .foregroundColor(.red)
+                                                Text("$\(String(format: "%.2f", shoes.price))")
+                                                    .font(.subheadline)
+                                                    .foregroundColor(.red)
+                                            }
+                                        }
                                     }
-                                }
-                            }.frame(minHeight: 240)
+                                    .padding(.bottom, 18)
+                                    .offset(x: 18)
+                                })
                         }
-                        .padding(.bottom, 18)
                     }
                 }
             }
-            .padding(.leading, 18)
         }
+        
     }
 }
 
@@ -475,21 +469,12 @@ struct CreditCardOfferView: View {
                         .scaledToFill()
                         .background(.cyan)
                         .cornerRadius(8)
-
-                    
-                }.padding(.leading, 18)
+                }
+                .offset(x: 18)
             }
         }
     }
 }
-
-
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        
-//        }
-//    }
-//}
 
 #if !os(macOS)
 #Preview {
