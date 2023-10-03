@@ -28,10 +28,3 @@ struct ShoesStoreApp: App {
             #endif
         }
 }
-
-enum Tab: Hashable {
-    case offers
-    case category
-    case wishlist
-    case account
-}
