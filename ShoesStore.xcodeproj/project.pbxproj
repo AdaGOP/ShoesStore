@@ -11,6 +11,16 @@
 		1BF191542ACC1668005466AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF191532ACC1668005466AB /* ContentView.swift */; };
 		1BF191562ACC166A005466AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF191552ACC166A005466AB /* Assets.xcassets */; };
 		1BF1915A2ACC166A005466AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF191592ACC166A005466AB /* Preview Assets.xcassets */; };
+		1BF191612ACC8BE5005466AB /* SaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF191602ACC8BE5005466AB /* SaleView.swift */; };
+		1BF191632ACC8C1A005466AB /* CreditCardOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF191622ACC8C1A005466AB /* CreditCardOfferView.swift */; };
+		1BF191652ACC8C44005466AB /* CouponsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF191642ACC8C44005466AB /* CouponsView.swift */; };
+		1BF191672ACC8C71005466AB /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF191662ACC8C71005466AB /* AccountView.swift */; };
+		1BF191692ACC8C97005466AB /* WishListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF191682ACC8C97005466AB /* WishListView.swift */; };
+		1BF1916B2ACC8CBF005466AB /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF1916A2ACC8CBF005466AB /* CategoryView.swift */; };
+		1BF1916D2ACC8CE9005466AB /* ShoesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF1916C2ACC8CE9005466AB /* ShoesDetailView.swift */; };
+		1BF1916F2ACC8D17005466AB /* ShoesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF1916E2ACC8D17005466AB /* ShoesView.swift */; };
+		1BF191712ACC8D3E005466AB /* Shoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF191702ACC8D3E005466AB /* Shoes.swift */; };
+		1BF191732ACC8D9F005466AB /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF191722ACC8D9F005466AB /* Tab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +30,16 @@
 		1BF191552ACC166A005466AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BF191572ACC166A005466AB /* ShoesStore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShoesStore.entitlements; sourceTree = "<group>"; };
 		1BF191592ACC166A005466AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1BF191602ACC8BE5005466AB /* SaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleView.swift; sourceTree = "<group>"; };
+		1BF191622ACC8C1A005466AB /* CreditCardOfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardOfferView.swift; sourceTree = "<group>"; };
+		1BF191642ACC8C44005466AB /* CouponsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponsView.swift; sourceTree = "<group>"; };
+		1BF191662ACC8C71005466AB /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		1BF191682ACC8C97005466AB /* WishListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListView.swift; sourceTree = "<group>"; };
+		1BF1916A2ACC8CBF005466AB /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		1BF1916C2ACC8CE9005466AB /* ShoesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesDetailView.swift; sourceTree = "<group>"; };
+		1BF1916E2ACC8D17005466AB /* ShoesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesView.swift; sourceTree = "<group>"; };
+		1BF191702ACC8D3E005466AB /* Shoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoes.swift; sourceTree = "<group>"; };
+		1BF191722ACC8D9F005466AB /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +74,19 @@
 			children = (
 				1BF191512ACC1668005466AB /* ShoesStoreApp.swift */,
 				1BF191532ACC1668005466AB /* ContentView.swift */,
+				1BF191662ACC8C71005466AB /* AccountView.swift */,
 				1BF191552ACC166A005466AB /* Assets.xcassets */,
 				1BF191572ACC166A005466AB /* ShoesStore.entitlements */,
 				1BF191582ACC166A005466AB /* Preview Content */,
+				1BF191602ACC8BE5005466AB /* SaleView.swift */,
+				1BF191622ACC8C1A005466AB /* CreditCardOfferView.swift */,
+				1BF191642ACC8C44005466AB /* CouponsView.swift */,
+				1BF191682ACC8C97005466AB /* WishListView.swift */,
+				1BF1916A2ACC8CBF005466AB /* CategoryView.swift */,
+				1BF1916C2ACC8CE9005466AB /* ShoesDetailView.swift */,
+				1BF1916E2ACC8D17005466AB /* ShoesView.swift */,
+				1BF191702ACC8D3E005466AB /* Shoes.swift */,
+				1BF191722ACC8D9F005466AB /* Tab.swift */,
 			);
 			path = ShoesStore;
 			sourceTree = "<group>";
@@ -139,8 +169,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BF191672ACC8C71005466AB /* AccountView.swift in Sources */,
+				1BF191692ACC8C97005466AB /* WishListView.swift in Sources */,
+				1BF191652ACC8C44005466AB /* CouponsView.swift in Sources */,
+				1BF191732ACC8D9F005466AB /* Tab.swift in Sources */,
+				1BF1916D2ACC8CE9005466AB /* ShoesDetailView.swift in Sources */,
+				1BF191612ACC8BE5005466AB /* SaleView.swift in Sources */,
 				1BF191542ACC1668005466AB /* ContentView.swift in Sources */,
+				1BF191632ACC8C1A005466AB /* CreditCardOfferView.swift in Sources */,
+				1BF191712ACC8D3E005466AB /* Shoes.swift in Sources */,
+				1BF1916B2ACC8CBF005466AB /* CategoryView.swift in Sources */,
 				1BF191522ACC1668005466AB /* ShoesStoreApp.swift in Sources */,
+				1BF1916F2ACC8D17005466AB /* ShoesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
