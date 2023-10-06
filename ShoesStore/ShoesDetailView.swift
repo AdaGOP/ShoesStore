@@ -27,7 +27,7 @@ struct ShoesDetailView: View {
                                 .padding(.leading, 18)
                             Text("Lebaran Sale!")
                                 .font(.custom("SF Pro", size: 15, relativeTo: .subheadline))
-                                
+                            
                             Spacer()
                             Text("\(shoes.numOfPromoDays) days left")
                                 .font(.custom("SF Pro", size: 15, relativeTo: .subheadline))
@@ -61,7 +61,7 @@ struct ShoesDetailView: View {
                     }
                     .padding(.bottom, 8)
                     
-                
+                    
                     Text(shoes.description)
                         .font(.body)
                     
@@ -82,6 +82,26 @@ struct ShoesDetailView: View {
                         .foregroundColor(.red)
                     Spacer()
                 }.padding()
+                Divider()
+                HStack{
+                    Image(systemName: "heart")
+                        .foregroundColor(.blue)
+                        .padding()
+                    Button(action: {
+                    }, label: {
+                        HStack{
+                            Image(systemName: "plus")
+                                .foregroundColor(.white)
+                            Text("Add to Bag")
+                                .foregroundColor(.white)
+                        }
+                    })
+                    .buttonStyle(BorderedButtonStyle())
+                    .frame(width: 300, height: 50)
+                    .background(.blue)
+                    .cornerRadius(16)
+                }
+                .padding()
             }
         }.toolbar(content: {
             Image(systemName: "bag")
